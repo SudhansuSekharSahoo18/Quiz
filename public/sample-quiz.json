@@ -1,0 +1,66 @@
+
+{
+  "title": "General Knowledge Challenge",
+  "questions": [
+    {
+      "id": "q1",
+      "questionText": "What is the capital of France?",
+      "options": [
+        { "id": "q1o1", "text": "Berlin", "isCorrect": false },
+        { "id": "q1o2", "text": "Madrid", "isCorrect": false },
+        { "id": "q1o3", "text": "Paris", "isCorrect": true },
+        { "id": "q1o4", "text": "Rome", "isCorrect": false }
+      ],
+      "category": "Geography",
+      "explanation": "Paris is the capital and most populous city of France."
+    },
+    {
+      "id": "q2",
+      "questionText": "Which planet is known as the Red Planet?",
+      "options": [
+        { "id": "q2o1", "text": "Earth", "isCorrect": false },
+        { "id": "q2o2", "text": "Mars", "isCorrect": true },
+        { "id": "q2o3", "text": "Jupiter", "isCorrect": false },
+        { "id": "q2o4", "text": "Saturn", "isCorrect": false }
+      ],
+      "category": "Science",
+      "explanation": "Mars is often called the Red Planet because of its reddish appearance."
+    },
+    {
+      "id": "q3",
+      "questionText": "Who wrote 'Romeo and Juliet'?",
+      "options": [
+        { "id": "q3o1", "text": "Charles Dickens", "isCorrect": false },
+        { "id": "q3o2", "text": "William Shakespeare", "isCorrect": true },
+        { "id": "q3o3", "text": "Jane Austen", "isCorrect": false },
+        { "id": "q3o4", "text": "Mark Twain", "isCorrect": false }
+      ],
+      "category": "Literature",
+      "explanation": "William Shakespeare is the author of the famous tragedy 'Romeo and Juliet'."
+    },
+    {
+      "id": "q4",
+      "questionText": "What is the largest ocean on Earth?",
+      "options": [
+        { "id": "q4o1", "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": "q4o2", "text": "Indian Ocean", "isCorrect": false },
+        { "id": "q4o3", "text": "Arctic Ocean", "isCorrect": false },
+        { "id": "q4o4", "text": "Pacific Ocean", "isCorrect": true }
+      ],
+      "category": "Geography",
+      "explanation": "The Pacific Ocean is the largest and deepest of Earth's five oceanic divisions."
+    },
+    {
+      "id": "q5",
+      "questionText": "What is 2 + 2 * 2?",
+      "options": [
+        { "id": "q5o1", "text": "8", "isCorrect": false },
+        { "id": "q5o2", "text": "6", "isCorrect": true },
+        { "id": "q5o3", "text": "4", "isCorrect": false },
+        { "id": "q5o4", "text": "10", "isCorrect": false }
+      ],
+      "category": "Math",
+      "explanation": "Following the order of operations (PEMDAS/BODMAS), multiplication is done before addition: 2 * 2 = 4, then 2 + 4 = 6."
+    }
+  ]
+}
