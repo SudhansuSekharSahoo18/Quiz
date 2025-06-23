@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { AppLogo } from '@/components/common/AppLogo';
 import { useToast } from '@/hooks/use-toast';
-import { UploadCloud, FileJson, DownloadCloud } from 'lucide-react';
+import { UploadCloud, FileJson, DownloadCloud, Settings } from 'lucide-react';
 
 export function HomePageClient() {
   const router = useRouter();
@@ -72,9 +72,12 @@ export function HomePageClient() {
     }
   };
 
-  // Clear any previous quiz state when returning to home
   useEffect(() => {
-    clearQuiz();
+    // Clear quiz data when the component mounts, if it wasn't cleared properly before
+    // This specific useEffect with clearQuiz might need to be re-evaluated based on desired UX.
+    // If the goal is to always start fresh on the home page, this is correct.
+    // If the goal was to clear it only after a quiz, the logic in QuizContext or navigation should handle that.
+    clearQuiz(); 
   }, [clearQuiz]);
 
   const handleDownloadSample = () => {
@@ -93,6 +96,16 @@ export function HomePageClient() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 animate-fade-in">
+       <Button 
+          onClick={() => router.push('/settings')} 
+          variant="ghost" 
+          size="icon" 
+          className="absolute top-4 right-4 text-primary hover:text-primary/80"
+          aria-label="Open Settings"
+          title="Settings"
+        >
+          <Settings className="h-6 w-6" />
+        </Button>
       <Card className="w-full max-w-lg shadow-2xl">
         <CardHeader className="text-center">
           <AppLogo className="mb-4 mx-auto" />
